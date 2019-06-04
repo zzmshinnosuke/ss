@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service>
+  <short>shadowsocks</short>
+  <description>enable shadowsocks.</description>
+  <port protocol="tcp" port="8000"/>
+  <port protocol="tcp" port="8001"/>
+  <port protocol="tcp" port="8002"/>
+  <port protocol="tcp" port="443"/>
+  <port protocol="tcp" port="1080"/>
+</service>
