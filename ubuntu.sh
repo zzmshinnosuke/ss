@@ -1,4 +1,5 @@
 # ubuntu16 ss
+export LC_ALL=C
 sudo apt-get install python3-pip
 sudo apt-get install python3-setuptools
 
