@@ -1,7 +1,7 @@
 # server
-## 配置文件：
-只配置一个端口和密码
-{
+## 配置文件：  
+只配置一个端口和密码  
+```{
 "server":"::",
 "server_port":443,
 "local_address": "127.0.0.1",
@@ -9,9 +9,9 @@
 "password":"MyPass",
 "timeout":600,
 "method":"aes-256-cfb"
-}
-server，可以直接配置ip。这样配置可以同时使用ipv4，ipv6，可以配置多个端口和密码
-{
+}  ```  
+server，可以直接配置ip。这样配置可以同时使用ipv4，ipv6，可以配置多个端口和密码  
+```{
  "server":"::",          # 同时支持 IPv4 和 IPv6
  "port_password": {
     "8000": "111111",
@@ -19,15 +19,15 @@ server，可以直接配置ip。这样配置可以同时使用ipv4，ipv6，可�
     "8002": "333333"
  },
  "method":"aes-256-cfb"
-}
+}``
 
-启动： `ssserver -c /etc/shadowsocks.json -d start`
-停止： `ssserver -c /etc/shadowsocks.json -d stop`
+启动： `ssserver -c /etc/shadowsocks.json -d start`  
+停止： `ssserver -c /etc/shadowsocks.json -d stop`  
 
-## 防火墙
-centos：
-/etc/firewalld/
-在services 修改shadowsocks.xml
+## 防火墙  
+centos：  
+/etc/firewalld/  
+在services 修改shadowsocks.xml  
 <?xml version="1.0" encoding="utf-8"?>
 <service>
   <short>shadowsocks</short>
@@ -43,8 +43,8 @@ firewall-cmd --reload
 service firewalld restart 
 
 # client
-windows： 安装shadowsocks客户端，需要安装新版的.net
-ubuntu:  安装和服务端一样
+windows： 安装shadowsocks客户端，需要安装新版的.net  
+ubuntu:  安装和服务端一样  
  {
    "server":"ip",
    "server_port":port,
@@ -52,8 +52,8 @@ ubuntu:  安装和服务端一样
    "timeout":600,
    "method":"aes-256-cfb"
  }
-启动客户端
-`sslocal -c /etc/shadowsocks.json`
+启动客户端  
+`sslocal -c /etc/shadowsocks.json`  
 
 
 # problems
