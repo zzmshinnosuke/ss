@@ -47,9 +47,9 @@ centos：
 添加服务  
 ` firewall-cmd --add-service=shadowsocks ` （添加之后不用重启，重启又不在了）  
 查看服务列表 
-` firewall-cmd --list-services  ` 
+` firewall-cmd --list-services  `   
 ` firewall-cmd --reload `  
-`service firewalld restart ` 
+`service firewalld restart `  
 
 # client
 windows： 安装shadowsocks客户端，需要安装新版的.net  
