@@ -9,7 +9,7 @@
 "password":"MyPass",
 "timeout":600,
 "method":"aes-256-cfb"
-}  ```  
+} ```  
 server，可以直接配置ip。这样配置可以同时使用ipv4，ipv6，可以配置多个端口和密码  
 ```{
  "server":"::",          # 同时支持 IPv4 和 IPv6
@@ -19,7 +19,7 @@ server，可以直接配置ip。这样配置可以同时使用ipv4，ipv6，可�
     "8002": "333333"
  },
  "method":"aes-256-cfb"
-}``
+}```
 
 启动： `ssserver -c /etc/shadowsocks.json -d start`  
 停止： `ssserver -c /etc/shadowsocks.json -d stop`  
